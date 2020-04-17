@@ -5,7 +5,7 @@ def main():
   dice_sum = 0
   for i in range(0,dice_rolls):
     roll = random.randint(1,dice_size)
-    dice_sum = dice_sum + roll
+    dice_sum += roll
     if roll ==1:
       print(f'You rolled a {roll}! Fail!')
     elif roll == dice_size:
